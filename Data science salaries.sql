@@ -5,7 +5,7 @@ GROUP BY `Job Title`
 ORDER BY count DESC
 LIMIT 3;
 
-# How does the distribution of employment types vary among data analyst positions?
+# How does the distribution of employment types vary among data science positions?
 SELECT `Employment Type`, COUNT(*) AS count
 FROM data_science_salaries
 GROUP BY `Employment Type`;
@@ -21,7 +21,7 @@ FROM data_science_salaries
 GROUP BY `Experience Level`;
 
 
-# Which currency is most commonly used for salaries in this dataset, and what's the distribution of different currencies?
+# Which currency is most commonly used for salaries in this dataset, and whats the distribution of different currencies?
 SELECT `Salary Currency`, COUNT(*) AS count
 FROM data_science_salaries
 GROUP BY `Salary Currency`
@@ -29,7 +29,7 @@ ORDER BY count DESC;
 
 
 # What are the top five company locations where entry-level data science positions are most prevalent?
-
+  
 SELECT `Company Location`, COUNT(*) AS count
 FROM data_science_salaries
 WHERE `Experience Level` = 'Entry'
